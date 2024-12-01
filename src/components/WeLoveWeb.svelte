@@ -11,7 +11,7 @@
   
   <section class="we-love-web-container">
     <div class="we-love-web-left">
-      <h2>WE LOVE WEBS</h2>
+      <h2>WE LOVE WEB NOTES</h2>
       <hr />
       <div class="we-love-web">
         {#each items as item, i}

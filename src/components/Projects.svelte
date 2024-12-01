@@ -2,13 +2,13 @@
   export let projects = [
     { 
       title: "Redpers", 
-      link: "https://github.com/annelinderaadsheer", 
+      link: "https://github.com/annelinderaadsheer/lose-your-head-the-client-case", 
       image: "/images/Redpers-logo.webp"
     },
     { 
-      title: "Project 2", 
-      link: "https://github.com/annelinderaadsheer", 
-      image: "/images/project2-logo.png" 
+      title: "Oba", 
+      link: "https://github.com/annelinderaadsheer/oba", 
+      image: "/images/Oba-logo.webp" 
     },
     { 
       title: "Project 3", 
@@ -19,16 +19,6 @@
       title: "Project 4", 
       link: "https://github.com/annelinderaadsheer", 
       image: "/images/project4-logo.png" 
-    },
-    { 
-      title: "Project 5", 
-      link: "https://github.com/annelinderaadsheer", 
-      image: "/images/project5-logo.png" 
-    },
-    { 
-      title: "Project 6", 
-      link: "https://github.com/annelinderaadsheer", 
-      image: "/images/project6-logo.png" 
     },
   ];
 </script>
@@ -82,4 +72,3 @@
     margin-top: 1rem;
   }
 </style>
-
