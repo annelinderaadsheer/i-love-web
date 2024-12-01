@@ -2,14 +2,16 @@
     import Header from '../components/Header.svelte';
     import AboutMe from '../components/AboutMe.svelte';
     import Projects from '../components/Projects.svelte';
-    import WeLoveWeb from '../components/WeLoveWeb.svelte';
+    import Skills from '../components/Skills.svelte'
+    // import WeLoveWeb from '../components/WeLoveWeb.svelte';
   </script>
   
   <main>
     <Header />
     <AboutMe />
     <Projects />
-    <WeLoveWeb />
+    <Skills />
+    <!-- <WeLoveWeb /> -->
   </main>
   
   <style>

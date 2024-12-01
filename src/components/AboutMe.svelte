@@ -47,7 +47,7 @@
   <div class="about-me-right">
     <h2>WHAT IS A FRONTEND DEVELOPER?</h2>
     <p>
-      As a frontend developer, I am passionate about creating user-friendly and visually appealing websites. I use HTML, CSS, and JavaScript to build responsive and interactive interfaces that adapt to various screen sizes. My focus is on optimizing the user experience by developing fast and accessible websites.
+      As a frontend developer, I am passionate about creating user-friendly websites.
     </p>
     <hr />
   </div>
