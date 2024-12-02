@@ -10,16 +10,16 @@
       link: "https://github.com/annelinderaadsheer/oba", 
       image: "/images/Oba-logo.webp" 
     },
-    { 
-      title: "Project 3", 
-      link: "https://github.com/annelinderaadsheer", 
-      image: "/images/project3-logo.png" 
-    },
-    { 
-      title: "Project 4", 
-      link: "https://github.com/annelinderaadsheer", 
-      image: "/images/project4-logo.png" 
-    },
+    // { 
+    //   title: "Project 3", 
+    //   link: "https://github.com/annelinderaadsheer", 
+    //   image: "/images/project3-logo.png" 
+    // },
+    // { 
+    //   title: "Project 4", 
+    //   link: "https://github.com/annelinderaadsheer", 
+    //   image: "/images/project4-logo.png" 
+    // },
   ];
 </script>
 
@@ -38,7 +38,8 @@
 <style>
   .my-projects-container {
     padding: 2rem;
-    color: white;
+    background-color: var(--color-light-pink);
+    color: var(--color-dark-pink);
   }
 
   .my-projects-container h2 {
@@ -53,17 +54,15 @@
 
   .project-item {
     text-align: center;
-    padding: 1rem;
-    border: 1px solid #333;
-    border-radius: 2px;
-    text-decoration: none;
-    color: white;
-    transition: background-color 0.3s;
-    background-color: white;
+    padding: 1.5rem;
+    border-radius: 4px;
+    /* text-decoration: none; */
+    /* transition: background-color 0.3s; */
+    /* background-color: white; */
   }
 
   .project-item:hover {
-    background-color: #444;
+    background-color: var(--color-orange);
   }
 
   .project-logo {

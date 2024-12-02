@@ -63,7 +63,7 @@
   }
 
   .about-me-container h2 {
-    color: var(--color-red);
+    color: var(--color-dark-pink);
   }
 
   .about-me-left, .about-me-right {
@@ -99,8 +99,8 @@
   .button {
     text-decoration: none;
     padding: 0.5rem 1rem;
-    border-radius: 2px;
-    color: white;
+    border-radius: 4px;
+    color: var(--color-light-pink);
     background-color: var(--color-orange);
     transition: background-color 0.3s;
     font-family: Courier, monospace;

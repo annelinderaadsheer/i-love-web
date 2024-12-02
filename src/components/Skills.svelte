@@ -35,7 +35,8 @@
       display: flex;
       flex-wrap: wrap;
       padding: 2rem;
-      color: white;
+      color: var(--color-pink);
+      background-color: var(--color-light-pink);
     }
   
     .skills-left,
@@ -54,7 +55,8 @@
   
     .skills-list li {
       margin: 0.5rem 0;
-      background: #222;
+      background-color: var(--color-orange);
+      color: var(--color-light-pink);
       padding: 0.5rem 1rem;
       border-radius: 4px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -68,7 +70,7 @@
   
     h2 {
       font-size: 1.5rem;
-      color: #ff6347;
+      color: var(--color-dark-pink);
     }
   
     /* hr {
