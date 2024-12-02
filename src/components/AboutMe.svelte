@@ -37,7 +37,6 @@
         <span id="typed-text">{typedText}</span>
       </strong>
     </p>
-    <hr />
     <div class="about-me-buttons">
       <a href={github} target="_blank" class="button github">GitHub</a>
       <a href={linkedin} target="_blank" class="button linkedin">LinkedIn</a>
@@ -49,7 +48,6 @@
     <p>
       As a frontend developer, I am passionate about creating user-friendly websites.
     </p>
-    <hr />
   </div>
 </section>
 
