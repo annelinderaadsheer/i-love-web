@@ -25,7 +25,7 @@
       <p>
         I use HTML, CSS, and JavaScript as the core building blocks for creating web applications. 
         Svelte and SvelteKit help me create highly efficient and interactive user interfaces. 
-        Directus and WordPress allow me to manage content effectively, while Next.js enables me to work with server-rendered applications for better performance.
+        Directus and WordPress allow me to manage content effectively.
       </p>
     </div>
   </section>
@@ -58,10 +58,11 @@
       padding: 0.5rem 1rem;
       border-radius: 4px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      font-family: Courier, monospace;
     }
   
     .skills-right p {
-      font-family: Courier, monospace;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       font-size: 1rem;
     }
   
@@ -70,12 +71,10 @@
       color: #ff6347;
     }
   
-    hr {
+    /* hr {
       border: none;
       height: 1px;
       background: #555;
       margin: 1.5rem 0;
-    }
+    } */
   </style>
-  
-  

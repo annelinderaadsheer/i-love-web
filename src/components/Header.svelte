@@ -12,12 +12,14 @@
     padding: 1.5rem 0;
     /* display: block; */
     container-type: inline-size; 
+    background-color: var(--color-light-pink);
   }
 
   .animated-text {
     font-variation-settings: 'wght' 700;
     animation: fontAnimation 6s infinite ease-in-out;
     transition: font-size 0.3s ease; 
+    color: var(--color-red);
   }
 
   @keyframes fontAnimation {

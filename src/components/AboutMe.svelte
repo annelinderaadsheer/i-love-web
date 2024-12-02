@@ -58,7 +58,12 @@
     display: flex;
     flex-wrap: wrap;
     padding: 2rem;
-    color: white;
+    color: var(--color-pink);
+    background-color: var(--color-light-pink);
+  }
+
+  .about-me-container h2 {
+    color: var(--color-red);
   }
 
   .about-me-left, .about-me-right {
@@ -67,7 +72,7 @@
   }
 
   .intro-1 {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1rem;
   }
 
@@ -88,8 +93,7 @@
   }
 
   .about-me-right p {
-    font-family: Didot, serif;
-    font-family: Courier, monospace;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
 
   .button {
@@ -97,13 +101,14 @@
     padding: 0.5rem 1rem;
     border-radius: 2px;
     color: white;
-    background-color: #333;
+    background-color: var(--color-orange);
     transition: background-color 0.3s;
-    font-family: Impact, fantasy;
+    font-family: Courier, monospace;
+    /* font-family: Didot, serif; */
   }
 
   .button:hover {
-    background-color: #555;
+    background-color: var(--color-yellow);
   }
 
   /* Styling for the typing effect text */
