@@ -3,28 +3,11 @@
   export let github = "https://github.com/annelinderaadsheer";
   export let linkedin = "https://www.linkedin.com/in/annelinde-raadsheer-b38375194/";
   export let email = "anne_linde@live.nl";
-
-  // Typen animatie
-  import { onMount } from 'svelte';
-
-  let typedText = "";
-
-  onMount(() => {
-    let text = "LET'S CREATE SOMETHING TOGETHER.";
-    let index = 0;
-    const interval = setInterval(() => {
-      typedText += text[index];
-      index++;
-      if (index === text.length) {
-        clearInterval(interval);
-      }
-    }, 100); // Dit bepaalt de snelheid van het typen
-  });
 </script>
 
 <section class="about-me-container">
-  <div class="about-me-left">
-    <h2>ABOUT ME</h2>
+  <header>
+    <h2 class="title">ABOUT ME</h2>
     <p class="intro-1">
       Hi there! My name is {name}, and I'm a frontend developer with love for creating responsive and accessible websites.
     </p>
@@ -34,7 +17,7 @@
     </div>
     <p>
       <strong class="intro-2">
-        <span id="typed-text">{typedText}</span>
+        LET'S CREATE SOMETHING TOGETHER!
       </strong>
     </p>
     <div class="about-me-buttons">
@@ -42,36 +25,39 @@
       <a href={linkedin} target="_blank" class="button linkedin">LinkedIn</a>
       <a href={"mailto:" + email} class="button email">E-mail</a>
     </div>
-  </div>
-  <div class="about-me-right">
-    <h2>WHAT IS A FRONTEND DEVELOPER?</h2>
+  </header>
+
+  <section class="about-me-right">
+    <h2 class="title">WHAT IS A FRONTEND DEVELOPER?</h2>
     <p>
       As a frontend developer, I am passionate about creating user-friendly websites.
     </p>
-  </div>
+  </section>
 </section>
 
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;700&display=swap');
+
   .about-me-container {
     display: flex;
     flex-wrap: wrap;
     padding: 2rem;
-    color: var(--color-pink);
+    color: var(--color-dark-pink);
     background-color: var(--color-light-pink);
   }
 
-  .about-me-container h2 {
-    color: var(--color-dark-pink);
+  /* Titels met Abril Fatface */
+  .title {
+    font-family: 'Abril Fatface', serif;
+    font-size: 2rem;
+    color: var(--color-red);
   }
 
-  .about-me-left, .about-me-right {
-    flex: 1 1 45%;
-    margin: 1rem;
-  }
-
-  .intro-1 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  /* Kleine teksten met Montserrat */
+  .intro-1, .about-me-right p {
+    font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
+    line-height: 1.6;
   }
 
   .photo-container {
@@ -90,28 +76,29 @@
     margin-top: 1rem;
   }
 
-  .about-me-right p {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  }
-
   .button {
     text-decoration: none;
     padding: 0.5rem 1rem;
     border-radius: 4px;
-    color: var(--color-light-pink);
-    background-color: var(--color-orange);
+    color: var(--color-red);
+    background-color: var(--color-white);
+    border: 2px solid var(--color-dark-pink);
     transition: background-color 0.3s;
-    font-family: Courier, monospace;
-    /* font-family: Didot, serif; */
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
   }
 
   .button:hover {
-    background-color: var(--color-yellow);
+    background-color: var(--color-dark-pink);
+    color: var(--color-light-pink);
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
   }
 
-  /* Styling for the typing effect text */
-  #typed-text {
-    display: inline-block;
+  /* Styling for static text */
+  .intro-2 {
     font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-red);
   }
 </style>

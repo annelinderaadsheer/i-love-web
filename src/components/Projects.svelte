@@ -10,16 +10,6 @@
       link: "https://github.com/annelinderaadsheer/oba", 
       image: "/images/Oba-logo.webp" 
     },
-    // { 
-    //   title: "Project 3", 
-    //   link: "https://github.com/annelinderaadsheer", 
-    //   image: "/images/project3-logo.png" 
-    // },
-    // { 
-    //   title: "Project 4", 
-    //   link: "https://github.com/annelinderaadsheer", 
-    //   image: "/images/project4-logo.png" 
-    // },
   ];
 </script>
 
@@ -27,8 +17,7 @@
   <h2>SOME OF MY PROJECTS</h2>
   <div class="project-grid">
     {#each projects as project}
-      <a href={project.link} class="project-item">
-        <!-- Alleen het logo wordt weergegeven, de titel is verwijderd -->
+      <a href={project.link} class="project-item button">
         <img src={project.image} alt={project.link} class="project-logo" />
       </a>
     {/each}
@@ -36,10 +25,14 @@
 </section>
 
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;700&display=swap');
+
   .my-projects-container {
     padding: 2rem;
     background-color: var(--color-light-pink);
-    color: var(--color-dark-pink);
+    color: var(--color-red);
+    font-family: 'Abril Fatface', serif;
+    font-size: 1.5rem;
   }
 
   .my-projects-container h2 {
@@ -52,22 +45,41 @@
     gap: 1rem;
   }
 
+  .button {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    color: var(--color-red);
+    background-color: var(--color-white);
+    border: 2px solid var(--color-dark-pink);
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 150px;
+  }
+
+  .button:hover {
+    color: var(--color-light-pink);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+  }
+
   .project-item {
     text-align: center;
     padding: 1.5rem;
     border-radius: 4px;
-    /* text-decoration: none; */
-    /* transition: background-color 0.3s; */
-    /* background-color: white; */
-  }
-
-  .project-item:hover {
-    background-color: var(--color-orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px; 
   }
 
   .project-logo {
-    max-width: 100%;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
+    max-width: 75%;
+    height: auto; 
   }
 </style>

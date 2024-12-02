@@ -7,34 +7,43 @@
 </header>
 
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
   .header {
     text-align: center;
-    padding: 1.5rem 0;
-    container-type: inline-size; 
+    padding: 2rem 0; /* Vergroot de padding voor meer ruimte rondom de tekst */
     background-color: var(--color-light-pink);
   }
 
   .static-text {
-    font-variation-settings: 'wght' 700;
-    transition: font-size 0.3s ease; 
+    font-family: 'Abril Fatface', serif; /* Sierlijk lettertype */
+    font-weight: 700;
     color: var(--color-red);
+    transition: font-size 0.3s ease;
   }
 
-  @container (min-width: 300px) {
+  /* Responsieve grotere font-groottes */
+  @media (min-width: 300px) {
     .static-text {
-      font-size: 1.5rem; 
+      font-size: 3rem; /* Groter op kleine schermen */
     }
   }
 
-  @container (min-width: 500px) {
+  @media (min-width: 500px) {
     .static-text {
-      font-size: 2rem; 
+      font-size: 4rem; /* Groter op middelgrote schermen */
     }
   }
 
-  @container (min-width: 700px) {
+  @media (min-width: 700px) {
     .static-text {
-      font-size: 4rem; 
+      font-size: 6rem; /* Nog groter op grote schermen */
+    }
+  }
+
+  @media (min-width: 1000px) {
+    .static-text {
+      font-size: 8rem; /* Extra groot voor grote schermen */
     }
   }
 </style>

@@ -1,82 +1,112 @@
 <script>
-    export let skills = [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Svelte",
-      "SvelteKit",
-      "Directus",
-      "WordPress",
-      "Next.js"
-    ];
-  </script>
-  
-  <section class="skills-container">
-    <div class="skills-left">
-      <h2>MY SKILLS</h2>
-      <ul class="skills-list">
-        {#each skills as skill}
-          <li>{skill}</li>
-        {/each}
-      </ul>
-    </div>
-    <div class="skills-right">
-      <h2>WHY THESE TECHNOLOGIES?</h2>
-      <p>
-        I use HTML, CSS, and JavaScript as the core building blocks for creating web applications. 
-        Svelte and SvelteKit help me create highly efficient and interactive user interfaces. 
-        Directus and WordPress allow me to manage content effectively.
-      </p>
-    </div>
-  </section>
-  
-  <style>
-    .skills-container {
-      display: flex;
-      flex-wrap: wrap;
-      padding: 2rem;
-      color: var(--color-pink);
-      background-color: var(--color-light-pink);
-    }
-  
-    .skills-left,
-    .skills-right {
-      flex: 1 1 45%;
-      margin: 1rem;
-    }
-  
-    .skills-list {
-      list-style: none;
-      padding: 0;
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      font-size: 1rem;
-      line-height: 1.8;
-    }
-  
-    .skills-list li {
-      margin: 0.5rem 0;
-      background-color: var(--color-orange);
-      color: var(--color-light-pink);
-      padding: 0.5rem 1rem;
-      border-radius: 4px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      font-family: Courier, monospace;
-    }
-  
-    .skills-right p {
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      font-size: 1rem;
-    }
-  
-    h2 {
-      font-size: 1.5rem;
-      color: var(--color-dark-pink);
-    }
-  
-    /* hr {
-      border: none;
-      height: 1px;
-      background: #555;
-      margin: 1.5rem 0;
-    } */
-  </style>
+  export let skills = [
+    { name: "HTML", level: 100 },
+    { name: "CSS", level: 100 },
+    { name: "JavaScript", level: 50 },
+    { name: "Svelte", level: 100 },
+    { name: "SvelteKit", level: 100 },
+    { name: "Directus", level: 50 },
+    { name: "WordPress", level: 50 },
+    { name: "Next.js", level: 30 }
+  ];
+</script>
+
+<section class="skills-container">
+  <div class="skills-left">
+    <h2>MY SKILLS</h2>
+    <ul class="skills-list">
+      {#each skills as skill}
+        <li class="skill-item" style="--skill-level: {skill.level}%">
+          <span>{skill.name}</span>
+        </li>
+      {/each}
+    </ul>
+  </div>
+  <div class="skills-right">
+    <h2>WHY THESE TECHNOLOGIES?</h2>
+    <p>
+      I use HTML, CSS, and JavaScript as the core building blocks for creating web applications. 
+      Svelte and SvelteKit help me create highly efficient and interactive user interfaces. 
+      Directus and WordPress allow me to manage content effectively.
+    </p>
+  </div>
+</section>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;700&display=swap');
+
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    color: var(--color-dark-pink);
+    background-color: var(--color-light-pink);
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .skills-left,
+  .skills-right {
+    flex: 1 1 45%;
+    margin: 1rem;
+  }
+
+  .skills-list {
+    list-style: none;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .skills-list li {
+    margin: 0.5rem 0;
+    background-color: var(--color-white);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    border: 2px solid var(--color-dark-pink);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  .skills-list li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px; /* hoogte van de voortgangsbalk */
+    background-color: var(--color-orange);
+    width: 0%; /* standaard breedte is 0% */
+    border-radius: 4px;
+    transition: width 0.5s ease; /* vloeiende overgang */
+  }
+
+  .skills-list li:hover::after {
+    width: var(--skill-level); /* bij hover naar de juiste percentage */
+  }
+
+  .skills-list span {
+    font-weight: bold;
+    color: var(--color-red);
+  }
+
+  .skills-right p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  h2 {
+    font-family: 'Abril Fatface', serif;
+    font-size: 2rem;
+    color: var(--color-red);
+  }
+
+  .skills-right h2 {
+    font-size: 2rem; 
+  }
+</style>
