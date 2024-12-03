@@ -80,9 +80,10 @@
   }
 
   /* Media Queries */
-  @media (min-width: 300px) {
+
+  @media (min-width: 320px) {
     .my-projects-container {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
     }
     .project-grid {
       grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -95,9 +96,9 @@
     }
   }
 
-  @media (min-width: 500px) {
+  @media (min-width: 480px) {
     .my-projects-container {
-      font-size: 1.4rem;
+      font-size: 1.3rem;
     }
     .project-grid {
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -110,12 +111,12 @@
     }
   }
 
-  @media (min-width: 700px) {
+  @media (min-width: 768px) {
     .my-projects-container {
-      font-size: 1.5rem; 
+      font-size: 1.4rem; 
     }
     .project-grid {
-      grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
     .project-logo {
       max-width: 50%;
@@ -125,18 +126,63 @@
     }
   }
 
-  @media (min-width: 1000px) {
+  @media (min-width: 1024px) {
     .my-projects-container {
       font-size: 1.6rem; 
     }
     .project-grid {
-      grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
     .project-logo {
       max-width: 50%;
     }
     .button {
       height: 150px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .my-projects-container {
+      font-size: 1.8rem;
+    }
+    .project-grid {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .project-logo {
+      max-width: 50%;
+    }
+    .button {
+      height: 160px;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .my-projects-container {
+      font-size: 2rem;
+    }
+    .project-grid {
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+    .project-logo {
+      max-width: 50%;
+    }
+    .button {
+      height: 170px;
+    }
+  }
+
+  @media (min-width: 1920px) {
+    .my-projects-container {
+      font-size: 2.2rem;
+    }
+    .project-grid {
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+    .project-logo {
+      max-width: 50%;
+    }
+    .button {
+      height: 180px;
     }
   }
 </style>

@@ -107,9 +107,10 @@
   }
 
   /* Media Queries */
-  @media (min-width: 300px) {
+
+  @media (min-width: 320px) {
     .skills-container {
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
 
     .skills-left,
@@ -118,7 +119,7 @@
     }
 
     .skills-list {
-      font-size: 1rem;
+      font-size: 0.9rem;
     }
 
     .skills-right p {
@@ -126,7 +127,26 @@
     }
   }
 
-  @media (min-width: 500px) {
+  @media (min-width: 480px) {
+    .skills-container {
+      font-size: 1.2rem;
+    }
+
+    .skills-left,
+    .skills-right {
+      flex: 1 1 45%;
+    }
+
+    .skills-list {
+      font-size: 1rem;
+    }
+
+    .skills-right p {
+      font-size: 1.1rem;
+    }
+  }
+
+  @media (min-width: 768px) {
     .skills-container {
       font-size: 1.4rem;
     }
@@ -141,30 +161,11 @@
     }
 
     .skills-right p {
-      font-size: 1.1rem;
-    }
-  }
-
-  @media (min-width: 700px) {
-    .skills-container {
-      font-size: 1.5rem;
-    }
-
-    .skills-left,
-    .skills-right {
-      flex: 1 1 45%;
-    }
-
-    .skills-list {
-      font-size: 1.2rem;
-    }
-
-    .skills-right p {
       font-size: 1.2rem;
     }
   }
 
-  @media (min-width: 1000px) {
+  @media (min-width: 1024px) {
     .skills-container {
       font-size: 1.6rem;
     }
@@ -175,11 +176,68 @@
     }
 
     .skills-list {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
     }
 
     .skills-right p {
       font-size: 1.3rem;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .skills-container {
+      font-size: 1.8rem;
+    }
+
+    .skills-left,
+    .skills-right {
+      flex: 1 1 45%;
+    }
+
+    .skills-list {
+      font-size: 1.3rem;
+    }
+
+    .skills-right p {
+      font-size: 1.4rem;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .skills-container {
+      font-size: 2rem;
+    }
+
+    .skills-left,
+    .skills-right {
+      flex: 1 1 45%;
+    }
+
+    .skills-list {
+      font-size: 1.4rem;
+    }
+
+    .skills-right p {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1920px) {
+    .skills-container {
+      font-size: 2.2rem;
+    }
+
+    .skills-left,
+    .skills-right {
+      flex: 1 1 45%;
+    }
+
+    .skills-list {
+      font-size: 1.5rem;
+    }
+
+    .skills-right p {
+      font-size: 1.6rem;
     }
   }
 </style>

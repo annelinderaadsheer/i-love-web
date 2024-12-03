@@ -61,7 +61,7 @@
   }
 
   /* Media Queries */
-  @media (min-width: 300px) {
+  @media (min-width: 320px) {
     .footer {
       padding: 2rem 0;
     }
@@ -76,13 +76,13 @@
     }
   }
 
-  @media (min-width: 500px) {
+  @media (min-width: 480px) {
     .footer {
       padding: 2.5rem 0;
     }
 
     .intro-2 {
-      font-size: 1.4rem;
+      font-size: 1.3rem;
     }
 
     .button {
@@ -91,13 +91,13 @@
     }
   }
 
-  @media (min-width: 700px) {
+  @media (min-width: 768px) {
     .footer {
       padding: 3rem 0;
     }
 
     .intro-2 {
-      font-size: 1.6rem;
+      font-size: 1.5rem;
     }
 
     .button {
@@ -106,9 +106,24 @@
     }
   }
 
-  @media (min-width: 1000px) {
+  @media (min-width: 1024px) {
     .footer {
       padding: 3.5rem 0;
+    }
+
+    .intro-2 {
+      font-size: 1.7rem;
+    }
+
+    .button {
+      font-size: 1.3rem;
+      padding: 0.8rem 1.6rem;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .footer {
+      padding: 4rem 0;
     }
 
     .intro-2 {
@@ -116,8 +131,38 @@
     }
 
     .button {
-      font-size: 1.3rem;
-      padding: 0.8rem 1.6rem;
+      font-size: 1.4rem;
+      padding: 0.9rem 1.8rem;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .footer {
+      padding: 4.5rem 0;
+    }
+
+    .intro-2 {
+      font-size: 2rem;
+    }
+
+    .button {
+      font-size: 1.5rem;
+      padding: 1rem 2rem;
+    }
+  }
+
+  @media (min-width: 1920px) {
+    .footer {
+      padding: 5rem 0;
+    }
+
+    .intro-2 {
+      font-size: 2.2rem;
+    }
+
+    .button {
+      font-size: 1.6rem;
+      padding: 1.1rem 2.2rem;
     }
   }
 </style>
