@@ -63,7 +63,8 @@
   }
 
   .button:hover {
-    color: var(--color-light-pink);
+    background-color: var(--color-grey);
+    color: var(--color-red);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     transform: translateY(-5px);
   }

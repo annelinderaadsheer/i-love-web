@@ -1,36 +1,22 @@
 <script>
   export let name = "Annelinde";
-  export let github = "https://github.com/annelinderaadsheer";
-  export let linkedin = "https://www.linkedin.com/in/annelinde-raadsheer-b38375194/";
-  export let email = "anne_linde@live.nl";
 </script>
 
 <section class="about-me-container">
   <header>
     <h2 class="title">ABOUT ME</h2>
     <p class="intro-1">
-      Hi there! My name is {name}, and I'm a frontend developer with love for creating responsive and accessible websites.
+      Hi there! My name is {name}, and I'm a 24-year-old frontend developer based in Amsterdam. I’m currently studying FDND at the HvA. When I’m not coding, you’ll find me staying active through sports, exploring new destinations, or experimenting in the kitchen with delicious recipes.
     </p>
     <div class="photo-container">
-      <img src="/images/photo1.jpg" alt="Photo 1 of {name}" class="profile-photo" />
-      <img src="/images/photo2.jpg" alt="Photo 2 of {name}" class="profile-photo" />
-    </div>
-    <p>
-      <strong class="intro-2">
-        LET'S CREATE SOMETHING TOGETHER!
-      </strong>
-    </p>
-    <div class="about-me-buttons">
-      <a href={github} target="_blank" class="button github">GitHub</a>
-      <a href={linkedin} target="_blank" class="button linkedin">LinkedIn</a>
-      <a href={"mailto:" + email} class="button email">E-mail</a>
+      <img src="/images/Foto-1.JPG" alt="Photo 1 of {name}" class="profile-photo" />
     </div>
   </header>
 
   <section class="about-me-right">
     <h2 class="title">WHAT IS A FRONTEND DEVELOPER?</h2>
     <p>
-      As a frontend developer, I am passionate about creating user-friendly websites.
+      As a frontend developer, I bring ideas into real life in the browser. By combining creativity and code, I build websites that are progressively enhanced, responsive, and accessible to everyone.
     </p>
   </section>
 </section>
@@ -46,14 +32,12 @@
     background-color: var(--color-light-pink);
   }
 
-  /* Titels met Abril Fatface */
   .title {
     font-family: 'Abril Fatface', serif;
     font-size: 2rem;
     color: var(--color-red);
   }
 
-  /* Kleine teksten met Montserrat */
   .intro-1, .about-me-right p {
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
@@ -65,40 +49,14 @@
   }
 
   .profile-photo {
-    max-width: 40%;
-    border-radius: 2px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-
-  .about-me-buttons {
-    display: flex;
-    gap: 1rem;
-    margin-top: 1rem;
-  }
-
-  .button {
-    text-decoration: none;
-    padding: 0.5rem 1rem;
+    max-width: 100%;
     border-radius: 4px;
-    color: var(--color-red);
-    background-color: var(--color-white);
-    border: 2px solid var(--color-dark-pink);
-    transition: background-color 0.3s;
-    font-family: 'Montserrat', sans-serif;
+    border: 2px solid var(--color-dark-pink); 
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
   }
 
-  .button:hover {
-    background-color: var(--color-dark-pink);
-    color: var(--color-light-pink);
-    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
-    transform: translateY(-2px);
-  }
-
-  /* Styling for static text */
-  .intro-2 {
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-    color: var(--color-red);
+  .profile-photo:hover {
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3); 
   }
 </style>
