@@ -19,7 +19,20 @@
     font-size: 2rem;
     font-family: 'Abril Fatface', serif;
     color: var(--color-red);
-    transition: font-size 0.3s ease;
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: slideIn 1s ease-out forwards;
+  }
+
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-25px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
   /* Media Queries */
