@@ -1,10 +1,10 @@
 :root {
-    --color-light-pink: #f3e3cb; /* Licht beige/roze */
-    --color-pink: #ff9b9e;       /* Zacht roze */
-    --color-red: #dd0222;        /* Dieprood */
-    --color-orange: #ff8a00;     /* Oranje */
-    --color-yellow: #fcb207;     /* Geel */
-    --color-dark-pink: #ff6347; 
+    --color-light-pink: #f3e3cb;
+    --color-pink: #ff9b9e;
+    --color-red: #dd0222;
+    --color-orange: #ff8a00;
+    --color-yellow: #fcb207;
+    --color-dark-pink: #ff6347;
     --color-white: #f2f2f2;
     --color-grey: #d1d1d1;
   }
