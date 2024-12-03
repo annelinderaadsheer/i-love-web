@@ -30,6 +30,7 @@
     font-family: 'Montserrat', sans-serif;
     color: var(--color-red);
     margin-bottom: 1rem;
+    font-size: 1.2rem; /* Standaard tekstgrootte voor intro-2 */
   }
 
   .about-me-buttons {
@@ -48,6 +49,8 @@
     transition: background-color 0.3s, transform 0.2s ease, box-shadow 0.3s;
     font-family: 'Montserrat', sans-serif;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+    font-size: 1rem;
+    font-weight: bold;
   }
 
   .button:hover {
@@ -55,5 +58,66 @@
     color: var(--color-red);
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
     transform: translateY(-2px) scale(1.05);
+  }
+
+  /* Media Queries */
+  @media (min-width: 300px) {
+    .footer {
+      padding: 2rem 0;
+    }
+
+    .intro-2 {
+      font-size: 1.2rem;
+    }
+
+    .button {
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+    }
+  }
+
+  @media (min-width: 500px) {
+    .footer {
+      padding: 2.5rem 0;
+    }
+
+    .intro-2 {
+      font-size: 1.4rem;
+    }
+
+    .button {
+      font-size: 1.1rem;
+      padding: 0.6rem 1.2rem;
+    }
+  }
+
+  @media (min-width: 700px) {
+    .footer {
+      padding: 3rem 0;
+    }
+
+    .intro-2 {
+      font-size: 1.6rem;
+    }
+
+    .button {
+      font-size: 1.2rem;
+      padding: 0.7rem 1.4rem;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    .footer {
+      padding: 3.5rem 0;
+    }
+
+    .intro-2 {
+      font-size: 1.8rem;
+    }
+
+    .button {
+      font-size: 1.3rem;
+      padding: 0.8rem 1.6rem;
+    }
   }
 </style>

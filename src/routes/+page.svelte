@@ -11,8 +11,8 @@
   <main>
     <Header />
     <AboutMe />
-    <Projects />
     <Skills />
+    <Projects />
     <Footer />
   </main>
   

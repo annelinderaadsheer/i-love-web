@@ -46,18 +46,16 @@
   }
 
   .button {
-    text-decoration: none;
-    padding: 0.5rem 1rem;
     border-radius: 4px;
     color: var(--color-red);
     background-color: var(--color-white);
     border: 2px solid var(--color-dark-pink);
     transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
     font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+    padding: 1rem;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     height: 150px;
   }
@@ -70,17 +68,75 @@
   }
 
   .project-item {
-    text-align: center;
-    padding: 1.5rem;
-    border-radius: 4px;
+    padding: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150px; 
+    height: 150px;
   }
 
   .project-logo {
-    max-width: 75%;
-    height: auto; 
+    max-width: 50%;
+  }
+
+  /* Media Queries */
+  @media (min-width: 300px) {
+    .my-projects-container {
+      font-size: 1.4rem;
+    }
+    .project-grid {
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+    .project-logo {
+      max-width: 100%;
+    }
+    .button {
+      height: 120px;
+    }
+  }
+
+  @media (min-width: 500px) {
+    .my-projects-container {
+      font-size: 1.4rem;
+    }
+    .project-grid {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    .project-logo {
+      max-width: 50%;
+    }
+    .button {
+      height: 130px;
+    }
+  }
+
+  @media (min-width: 700px) {
+    .my-projects-container {
+      font-size: 1.5rem; 
+    }
+    .project-grid {
+      grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    }
+    .project-logo {
+      max-width: 50%;
+    }
+    .button {
+      height: 140px;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    .my-projects-container {
+      font-size: 1.6rem; 
+    }
+    .project-grid {
+      grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    }
+    .project-logo {
+      max-width: 50%;
+    }
+    .button {
+      height: 150px;
+    }
   }
 </style>

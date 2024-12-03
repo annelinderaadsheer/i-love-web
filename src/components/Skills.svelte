@@ -12,7 +12,7 @@
 </script>
 
 <section class="skills-container">
-  <div class="skills-left">
+  <section class="skills-left">
     <h2>MY SKILLS</h2>
     <ul class="skills-list">
       {#each skills as skill}
@@ -21,15 +21,15 @@
         </li>
       {/each}
     </ul>
-  </div>
-  <div class="skills-right">
-    <h2>WHY THESE TECHNOLOGIES?</h2>
+  </section>
+  <section class="skills-right">
+    <h2>WHY THESE SKILLS?</h2>
     <p>
       I use HTML, CSS, and JavaScript as the core building blocks for creating web applications. 
       Svelte and SvelteKit help me create highly efficient and interactive user interfaces. 
       Directus and WordPress allow me to manage content effectively.
     </p>
-  </div>
+  </section>
 </section>
 
 <style>
@@ -78,15 +78,15 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    height: 4px; /* hoogte van de voortgangsbalk */
+    height: 4px;
     background-color: var(--color-orange);
-    width: 0%; /* standaard breedte is 0% */
+    width: 0%;
     border-radius: 4px;
-    transition: width 0.5s ease; /* vloeiende overgang */
+    transition: width 0.5s ease;
   }
 
   .skills-list li:hover::after {
-    width: var(--skill-level); /* bij hover naar de juiste percentage */
+    width: var(--skill-level); 
   }
 
   .skills-list span {
@@ -96,7 +96,7 @@
 
   .skills-right p {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.6;
   }
 
@@ -106,7 +106,80 @@
     color: var(--color-red);
   }
 
-  .skills-right h2 {
-    font-size: 2rem; 
+  /* Media Queries */
+  @media (min-width: 300px) {
+    .skills-container {
+      font-size: 1.2rem;
+    }
+
+    .skills-left,
+    .skills-right {
+      flex: 1 1 100%;
+    }
+
+    .skills-list {
+      font-size: 1rem;
+    }
+
+    .skills-right p {
+      font-size: 1rem;
+    }
+  }
+
+  @media (min-width: 500px) {
+    .skills-container {
+      font-size: 1.4rem;
+    }
+
+    .skills-left,
+    .skills-right {
+      flex: 1 1 45%;
+    }
+
+    .skills-list {
+      font-size: 1.1rem;
+    }
+
+    .skills-right p {
+      font-size: 1.1rem;
+    }
+  }
+
+  @media (min-width: 700px) {
+    .skills-container {
+      font-size: 1.5rem;
+    }
+
+    .skills-left,
+    .skills-right {
+      flex: 1 1 45%;
+    }
+
+    .skills-list {
+      font-size: 1.2rem;
+    }
+
+    .skills-right p {
+      font-size: 1.2rem;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    .skills-container {
+      font-size: 1.6rem;
+    }
+
+    .skills-left,
+    .skills-right {
+      flex: 1 1 45%;
+    }
+
+    .skills-list {
+      font-size: 1.3rem;
+    }
+
+    .skills-right p {
+      font-size: 1.3rem;
+    }
   }
 </style>
