@@ -22,6 +22,7 @@
     transition: font-size 0.3s ease;
   }
 
+  /* Media Queries */
   @media (min-width: 320px) {
     .static-text {
       font-size: 3rem; 
