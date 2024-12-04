@@ -33,16 +33,21 @@
     color: var(--color-red);
     font-family: 'Abril Fatface', serif;
     font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 0; 
   }
 
   .my-projects-container h2 {
-    text-align: center;
+    margin-bottom: 1rem; 
   }
 
   .project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 0 auto; 
+    padding: 0; 
+    flex-wrap: nowrap; 
   }
 
   .button {
@@ -53,46 +58,43 @@
     transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
     font-family: 'Montserrat', sans-serif;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
-    padding: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150px;
+    aspect-ratio: 1 / 1;
+    height: 120px;
+    width: 120px;
   }
 
   .button:hover {
     background-color: var(--color-grey);
     color: var(--color-red);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-    transform: translateY(-5px);
+    transform: translateY(-2px) scale(1.01);
   }
 
   .project-item {
-    padding: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150px;
   }
 
   .project-logo {
-    max-width: 50%;
+    max-width: 80%;
+    max-height: 80%;
   }
 
   /* Media Queries */
-
   @media (min-width: 320px) {
     .my-projects-container {
       font-size: 1.2rem;
     }
     .project-grid {
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    }
-    .project-logo {
-      max-width: 100%;
+      gap: 0.25rem;
     }
     .button {
       height: 120px;
+      width: 120px;
     }
   }
 
@@ -101,13 +103,11 @@
       font-size: 1.3rem;
     }
     .project-grid {
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    }
-    .project-logo {
-      max-width: 50%;
+      gap: 0.5rem;
     }
     .button {
       height: 130px;
+      width: 130px;
     }
   }
 
@@ -116,13 +116,11 @@
       font-size: 1.4rem; 
     }
     .project-grid {
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-    .project-logo {
-      max-width: 50%;
+      gap: 1rem;
     }
     .button {
       height: 140px;
+      width: 140px;
     }
   }
 
@@ -131,13 +129,11 @@
       font-size: 1.6rem; 
     }
     .project-grid {
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-    .project-logo {
-      max-width: 50%;
+      gap: 1rem;
     }
     .button {
       height: 150px;
+      width: 150px;
     }
   }
 
@@ -146,13 +142,11 @@
       font-size: 1.8rem;
     }
     .project-grid {
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    }
-    .project-logo {
-      max-width: 50%;
+      gap: 1rem;
     }
     .button {
       height: 160px;
+      width: 160px;
     }
   }
 
@@ -161,13 +155,11 @@
       font-size: 2rem;
     }
     .project-grid {
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    }
-    .project-logo {
-      max-width: 50%;
+      gap: 1rem;
     }
     .button {
-      height: 170px;
+      height: 140px;
+      width: 140px;
     }
   }
 
@@ -176,13 +168,12 @@
       font-size: 2.2rem;
     }
     .project-grid {
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    }
-    .project-logo {
-      max-width: 50%;
+      gap: 1rem;
     }
     .button {
-      height: 180px;
+      height: 120px;
+      width: 120px;
     }
   }
 </style>
+
