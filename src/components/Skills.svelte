@@ -35,15 +35,6 @@
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;700&display=swap');
 
-  :root {
-    --color-dark-pink: #d6336c;
-    --color-light-pink: #ffe5ec;
-    --color-white: #ffffff;
-    --color-orange: #ff7f50;
-    --color-red: #e63946;
-  }
-
-  /* General Styles */
   .skills-container {
     display: flex;
     flex-wrap: wrap;

@@ -20,18 +20,23 @@
     font-family: 'Abril Fatface', serif;
     color: var(--color-red);
     opacity: 0;
-    transform: translateY(-50px);
-    animation: slideIn 1s ease-out forwards;
+    transform: scale(0.5); 
+    animation: zoomIn 2s ease-out forwards; 
   }
 
-  @keyframes slideIn {
+  /* Animatie */
+  @keyframes zoomIn {
     0% {
       opacity: 0;
-      transform: translateY(-25px);
+      transform: scale(0.5); 
+    }
+    50% {
+      opacity: 0.8;
+      transform: scale(1.1); 
     }
     100% {
       opacity: 1;
-      transform: translateY(0);
+      transform: scale(1); 
     }
   }
 
