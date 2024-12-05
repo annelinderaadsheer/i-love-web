@@ -66,83 +66,43 @@
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
   }
 
-  /* Media Queries */
-
-  @media (min-width: 320px) {
-    .about-me-container {
-      flex-direction: column;
-    }
-    .photo-container {
-      justify-content: center;
-      margin-bottom: 1.5rem;
-    }
-    .profile-photo {
-      max-width: 100%;
-    }
+  /* Container Queries voor tekstgroottes en marges */
+  @container (min-width: 320px) {
     .intro-1, .about-me-right p {
       font-size: 1rem;
     }
   }
 
-  @media (min-width: 480px) {
-    .about-me-container {
-      flex-direction: column;
-    }
-    .photo-container {
-      justify-content: center;
-      margin-bottom: 1.5rem;
-    }
-    .profile-photo {
-      max-width: 100%;
-    }
+  @container (min-width: 480px) {
     .intro-1, .about-me-right p {
       font-size: 1.1rem;
     }
   }
 
-  @media (min-width: 768px) {
-    .about-me-container {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .photo-container {
-      margin-right: 2rem;
-      width: 85%;
-    }
-    .profile-photo {
-      max-width: 100%; 
-    }
+  @container (min-width: 768px) {
     .intro-1, .about-me-right p {
       font-size: 1.2rem;
     }
   }
 
-  @media (min-width: 1024px) {
-    .about-me-container {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      padding: 3rem;
-    }
-    .photo-container {
-      width: 75%;
-    }
+  @container (min-width: 1024px) {
     .title {
       font-size: 2.5rem;
     }
+
     .intro-1, .about-me-right p {
       font-size: 1.3rem;
     }
   }
 
-  @media (min-width: 1280px) {
+  @container (min-width: 1280px) {
     .about-me-container {
       padding: 4rem;
     }
     .photo-container {
       width: 60%;
     }
+
     .title {
       font-size: 3rem;
     }
@@ -151,7 +111,7 @@
     }
   }
 
-  @media (min-width: 1440px) {
+  @container (min-width: 1440px) {
     .about-me-container {
       padding: 4rem;
     }
@@ -166,7 +126,7 @@
     }
   }
 
-  @media (min-width: 1920px) {
+  @container (min-width: 1920px) {
     .about-me-container {
       padding: 5rem;
     }
@@ -178,6 +138,78 @@
     }
     .intro-1, .about-me-right p {
       font-size: 1.6rem;
+    }
+  }
+
+  /* Media Queries voor de lay-out (geen container queries voor layout) */
+  @media (min-width: 320px) {
+    .about-me-container {
+      flex-direction: column;
+    }
+    .photo-container {
+      justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  @media (min-width: 480px) {
+    .about-me-container {
+      flex-direction: column;
+    }
+    .photo-container {
+      justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .about-me-container {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .photo-container {
+      margin-right: 2rem;
+      width: 85%;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .about-me-container {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 3rem;
+    }
+    .photo-container {
+      width: 75%;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .about-me-container {
+      padding: 4rem;
+    }
+    .photo-container {
+      width: 60%;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .about-me-container {
+      padding: 4rem;
+    }
+    .photo-container {
+      width: 60%;
+    }
+  }
+
+  @media (min-width: 1920px) {
+    .about-me-container {
+      padding: 5rem;
+    }
+    .photo-container {
+      width: 50%;
     }
   }
 </style>
