@@ -9,7 +9,7 @@
       Hi there! My name is {name}, and I'm a 24-year-old frontend developer based in Amsterdam. I’m currently studying FDND at the HvA. When I’m not coding, you’ll find me staying active through sports, exploring new destinations, or experimenting in the kitchen with delicious recipes.
     </p>
     <div class="photo-container">
-      <img src="/images/Foto-1.JPG" alt="Photo 1 of {name}" class="profile-photo" />
+      <img src="/images/Foto-1.JPG" alt="Photo of {name}" class="profile-photo" />
     </div>
   </header>
 

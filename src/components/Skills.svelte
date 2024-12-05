@@ -107,7 +107,6 @@
   }
 
   /* Media Queries */
-
   @media (min-width: 320px) {
     .skills-container {
       font-size: 1rem;
