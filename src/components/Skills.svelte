@@ -35,6 +35,15 @@
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;700&display=swap');
 
+  :root {
+    --color-dark-pink: #d6336c;
+    --color-light-pink: #ffe5ec;
+    --color-white: #ffffff;
+    --color-orange: #ff7f50;
+    --color-red: #e63946;
+  }
+
+  /* General Styles */
   .skills-container {
     display: flex;
     flex-wrap: wrap;
@@ -53,7 +62,6 @@
   .skills-list {
     list-style: none;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     line-height: 1.8;
   }
@@ -65,12 +73,13 @@
     border-radius: 4px;
     border: 2px solid var(--color-dark-pink);
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 1px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
   }
 
   .skills-list li::after {
@@ -86,7 +95,7 @@
   }
 
   .skills-list li:hover::after {
-    width: var(--skill-level); 
+    width: var(--skill-level);
   }
 
   .skills-list span {
@@ -95,7 +104,6 @@
   }
 
   .skills-right p {
-    font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
     line-height: 1.6;
   }
@@ -104,6 +112,62 @@
     font-family: 'Abril Fatface', serif;
     font-size: 2rem;
     color: var(--color-red);
+  }
+
+  /* Scroll-triggered animations */
+  @media (prefers-reduced-motion: no-preference) {
+    .skills-list li:nth-child(1) {
+      animation: fadeInUp 0.6s ease forwards 0.2s;
+    }
+
+    .skills-list li:nth-child(2) {
+      animation: fadeInUp 0.6s ease forwards 0.4s;
+    }
+
+    .skills-list li:nth-child(3) {
+      animation: fadeInUp 0.6s ease forwards 0.6s;
+    }
+
+    .skills-list li:nth-child(4) {
+      animation: fadeInUp 0.6s ease forwards 0.8s;
+    }
+
+    .skills-list li:nth-child(5) {
+      animation: fadeInUp 0.6s ease forwards 1s;
+    }
+
+    .skills-list li:nth-child(6) {
+      animation: fadeInUp 0.6s ease forwards 1.2s;
+    }
+
+    .skills-list li:nth-child(7) {
+      animation: fadeInUp 0.6s ease forwards 1.4s;
+    }
+
+    .skills-list li:nth-child(8) {
+      animation: fadeInUp 0.6s ease forwards 1.6s;
+    }
+  }
+
+  /* Animation keyframes */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Reduced Motion */
+  @media (prefers-reduced-motion: reduce) {
+    .skills-list li {
+      opacity: 1;
+      transform: none;
+      animation: none;
+    }
   }
 
   /* Media Queries */
