@@ -19,8 +19,6 @@
   <style>
     main {
       font-family: 'Arial', sans-serif;
-      /* color: white; */
-      /* background-color: var(----color-light-pink); */
       margin: 0;
       padding: 0;
       min-height: 100vh;

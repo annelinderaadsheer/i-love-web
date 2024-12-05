@@ -25,6 +25,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;700&display=swap');
 
   .about-me-container {
+    container-type: inline-size; /* Dit maakt het element een container */
     padding: 2rem;
     color: var(--color-dark-pink);
     background-color: var(--color-light-pink);
