@@ -82,10 +82,6 @@
     margin-top: 1rem;
   }
 
-  #bullets input[type="radio"] {
-    display: none;
-  }
-
   #bullets label {
     width: 12px;
     height: 12px;
