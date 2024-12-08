@@ -17,7 +17,7 @@
       </a>
     </div>
 
-    <!-- Navigatie bullets -->
+    <!-- Bullets -->
     <div id="bullets">
       <label for="slide1"></label>
       <label for="slide2"></label>
@@ -29,7 +29,6 @@
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;700&display=swap');
 
-  /* Container voor projecten */
   .my-projects-container {
     padding: 2rem;
     background-color: var(--color-light-pink);
@@ -53,6 +52,11 @@
     margin: 0 auto;
   }
 
+  /* Verberg standaard radio buttons */
+  #carousel input[type="radio"] {
+    display: none;
+}
+
   .inner {
     display: flex;
     transition: transform 0.5s ease;
@@ -71,7 +75,7 @@
     max-height: 80%;
   }
 
-  /* Navigatie bullets */
+  /* Bullets styling */
   #bullets {
     display: flex;
     justify-content: center;
@@ -101,7 +105,7 @@
     background-color: #999;
   }
 
-  /* CSS-only Transitie van slides */
+  /* Verschuift de carousel naar links of rechts afhankelijk van de geselecteerde radio-button */
   input[type="radio"]:nth-child(1):checked ~ .inner {
     transform: translateX(0%);
   }
@@ -113,4 +117,3 @@
     transform: translateX(-200%);
   }
 </style>
-
